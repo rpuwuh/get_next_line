@@ -51,7 +51,7 @@ char	*ft_strdup(const char	*s1)
 	copy = (char *) malloc(i * sizeof(char));
 	if (!copy)
 		return (NULL);
-	else 
+	else
 		ft_memcpy(copy, s1, i);
 	return (copy);
 }
@@ -88,6 +88,8 @@ char	*ft_strchr(const char	*s, int	c)
 
 	b = (unsigned char)c;
 	str = (char *) s;
+	if (str == NULL)
+		return (NULL);
 	while (*str != '\0')
 	{
 		if (*str == b)
