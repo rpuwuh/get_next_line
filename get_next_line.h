@@ -18,5 +18,6 @@ char	*ft_strjoin(char const	*s1, char const	*s2);
 char	*ft_strchr(const char	*s, int	c);
 void	*ft_calloc(size_t	count, size_t	size);
 void	*ft_bzero(void	*s, size_t	n);
+void	ft_cleanfreestring(char **s);
 
 #endif
